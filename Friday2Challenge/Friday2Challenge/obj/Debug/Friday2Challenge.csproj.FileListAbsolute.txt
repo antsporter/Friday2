@@ -1,0 +1,7 @@
+c:\users\administrator\source\repos\Friday2Challenge\Friday2Challenge\bin\Debug\Friday2Challenge.exe.config
+c:\users\administrator\source\repos\Friday2Challenge\Friday2Challenge\bin\Debug\Friday2Challenge.exe
+c:\users\administrator\source\repos\Friday2Challenge\Friday2Challenge\bin\Debug\Friday2Challenge.pdb
+c:\users\administrator\source\repos\Friday2Challenge\Friday2Challenge\obj\Debug\Friday2Challenge.csprojAssemblyReference.cache
+c:\users\administrator\source\repos\Friday2Challenge\Friday2Challenge\obj\Debug\Friday2Challenge.csproj.CoreCompileInputs.cache
+c:\users\administrator\source\repos\Friday2Challenge\Friday2Challenge\obj\Debug\Friday2Challenge.exe
+c:\users\administrator\source\repos\Friday2Challenge\Friday2Challenge\obj\Debug\Friday2Challenge.pdb
