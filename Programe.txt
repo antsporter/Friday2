@@ -1,0 +1,28 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Friday2Challenge
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Convert C = new Convert();
+
+            C.ReplaceNumbersWithStrings(8);
+            C.ReplaceNumbersWithStrings(12);
+            C.ReplaceNumbersWithStrings(88);
+            C.ReplaceNumbersWithStrings(105);
+            C.ReplaceNumbersWithStrings(999);
+            C.ReplaceNumbersWithStrings(1001);
+            C.ReplaceNumbersWithStrings(4781);
+            C.ReplaceNumbersWithStrings(9999);
+            C.ReplaceNumbersWithStrings(10000);
+
+            Console.Read();
+        }
+    }
+}
