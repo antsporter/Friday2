@@ -26,57 +26,72 @@ namespace Friday2Challenge
 
         }
 
-        private string IntToString(int number)
+                public void ReplaceNumbersWithStrings(int no1)
         {
-            string[] units = { "zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen" };
+
+            if (no1 >= 0 && no1 < 100000)
+            {
+                Console.WriteLine("Your number is: " + no1);
+                Console.WriteLine("Converted to English is: " + IntToString(no1));
+            }
+            else
+            {
+                Console.WriteLine("Your number is: " + no1);
+                Console.WriteLine("This number doesn't work for my logic!");
+            }
+
+        }
+
+        private string IntToString(int no2)
+        {
+            string[] starting = { "zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen" };
             string[] tens = { "zero", "ten", "twenty", "thirty", "fourty", "fifty", "sixty", "seventy", "eighty", "ninety" };
 
-            string words = "";
+            string text = "";
 
-            if (number == 0)
+            if (no2 == 0)
             {
                 return "zero";
             }
-
-            if ((number / 1000) > 0) 
+            if ((no2 / 10000) > 0)
             {
-                words += units[(number / 1000)] + " thousand ";
-                number = number % 1000; 
+                text += tens[(no2 / 10000)] + " thousand";
+                no2 = no2 % 10000;
+            }
+            if ((no2 / 1000) > 0) 
+            {
+                text += starting[(no2 / 1000)] + " thousand ";
+                no2 = no2 % 1000; 
             }
 
-            if ((number / 100) > 0) 
+            if ((no2 / 100) > 0) 
             {
-                words += units[(number / 100)] + " hundred ";
-                number = number % 100; 
+                text += starting[(no2 / 100)] + " hundred ";
+                no2 = no2 % 100; 
             }
 
-            if (number > 0)
+            if (no2 > 0)
             {
-                if (words != "")
+                if (text != "")
                 {
                     
-                    words += "and ";
+                    text += "and ";
                 }
 
-                if (number < 20)
+                if (no2 < 20)
                 {
-                    words += units[number];
+                    text += starting[no2];
                 }
                 else
                 {
                     
-                    words += tens[number / 10];
+                    text += tens[no2 / 10];
 
-                    if ((number % 10) > 0) 
+                    if ((no2 % 10) > 0) 
                     {
-                        words += " " + units[number % 10];
+                        text += " " + starting[no2 % 10];
                     }
                 }
             }
-            return words;
+            return text;
         }
-
-
-    }
-
-}
