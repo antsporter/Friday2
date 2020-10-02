@@ -20,7 +20,9 @@ namespace Friday2Challenge
             C.ReplaceNumbersWithStrings(1001);
             C.ReplaceNumbersWithStrings(4781);
             C.ReplaceNumbersWithStrings(9999);
-            C.ReplaceNumbersWithStrings(10000);
+            C.ReplaceNumbersWithStrings(194851);
+
+            Console.Read();
 
             Console.Read();
         }
